@@ -1,0 +1,6 @@
+devel/*
+build/*
+.catkin_workspace
+*.cpp~
+*.py~
+*.h~

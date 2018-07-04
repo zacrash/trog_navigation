@@ -1,0 +1,6 @@
+# All temporary
+uint32 goal_location
+---
+uint32 time
+---
+uint32 current_location

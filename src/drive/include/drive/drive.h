@@ -1,10 +1,18 @@
-#include <vector>
+#ifndef NAV_DRIVE_ACTION_H
+#define NAV_DRIVE_ACTION_H
 
-#include <ros.h>
+#include <vector>
+#include <string>
+
+#include <ros/ros.h>
 #include <geometry_msgs/PoseStamped.h>
+#include <actionlib/simple_action_server.h>
+#include <action/DriveAction.h>
 
 
 namespace drive {
+
+  typedef actionlib::SimpleActionServer<drive::DriveAction> ActionServer;
   
   enum DriveState {
     WAITING,
@@ -25,6 +33,7 @@ namespace drive {
 
     void resetState();
 
+    ActionServer* as_;
     tf::TransformListener& tf_;
     tf::Stamped<tf::Pose> local_pose_;
     double planner_frequency_;
@@ -37,5 +46,7 @@ namespace drive {
     geometry_msgs::Twist action_;
     double action_timestamp_;
     bool took_action_;
+
   };
 };
+#endif

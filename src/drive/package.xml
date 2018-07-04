@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>drive</name>
+  <version>0.0.0</version>
+  <description>Main package in charge of sending velocity commands to various motors based on deep learning models</description>
+
+
+  <maintainer email="zachrash@ucla.edu">Zac Rash</maintainer>
+
+
+  <license>TODO</license>
+
+
+  <author email="zachrash@ucla.edu">Zac Rash</author> -->
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>message_generation</build_depend>
+  
+  <build_depend>actionlib</build_depend>
+  <build_depend>actionlib_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>actionlib_msgs</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+
+  <depend>geometry_msgs</depend>
+  <depend>tf</depend>
+  
+
+</package>
