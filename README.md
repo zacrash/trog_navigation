@@ -14,6 +14,9 @@ destination.
 * trog_agent: the RL agent
 * controllers: motor controller interface for mobile robot
 
+## NOTE
+* This is a highly volatile repo, as the RL is still experimental and debugging robotic logic while core functionality is not working 100% is a bad idea!
+
 ## Contact
 Zach Rash <zachrash@ucla.edu>
 Brad Squicciarini <bsquicciarini@ucla.edu>
